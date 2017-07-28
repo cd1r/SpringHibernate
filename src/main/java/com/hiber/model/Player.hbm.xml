@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	 "http://www.hibernate.org/dtd/hibernate-mapping">
+<!-- "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">-->
+
+<!-- Generated 2017. 7. 7 ???? 11:18:04 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.hiber.model.Player" table="Player"> <!-- 대소문자 구분 x -->
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="nation" type="java.lang.String">
+            <column name="NATION" />
+        </property>
+        <property name="height" type="int">
+            <column name="HEIGHT" />
+        </property>
+        <property name="birth" type="java.lang.String">
+            <column name="BIRTH" />
+        </property>
+    </class>
+    
+    <sql-query name="callSelectPlayerSP">
+		<return alias="player" class="com.hiber.model.Player"/>
+		<![CDATA[selectPlayer]]>
+    </sql-query>
+</hibernate-mapping>

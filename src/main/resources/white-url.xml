@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<white-url><!-- 카페 설정 파일 샘플입니다. 적절하게 수정해서 사용하시기바랍니다.-->
+	<src>
+		<domain name="http://localhost:8088/hiber" desc="Hiber">
+			<pattern>http://localhost:8088/hiber*</pattern>
+			<pattern>http://localhost:8088/hiber/*</pattern>
+		</domain>	
+	</src>
+</white-url>
